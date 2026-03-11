@@ -32,11 +32,16 @@ int main(){
         printf("\n");
     }
 
+    do
+    {
     printf("ingresa la primera coordenada del bote 2 (jugador 1)\n");
     scanf("%d" "%d", &c, &d);
-
     c= c-1;
-    d= d-1;
+    d= d-1; 
+
+    } while ((c || d)==(a || b));
+    
+    
     jugador1 [c][d]= bote2 [0];
 
     for (i=0; i < 3; i++){
@@ -52,7 +57,8 @@ int main(){
     scanf("%d%d", &e, &f);
     e= e-1;
     f= f-1;
-    } while (!((c==e)||(d==f)));
+    } while (  (!( (c==e) || (d==f) ))  || ((e==f) && !(e==1 || f==1)) || (e>f) );//Esta shit hace que solo se pongan valores alrededor de la primera coordenada del bote 2,
+                                                    //el pedo es cuando tenemos un barco de que en en medio de un fila, no se puede poner en el centro        
 
     
 
