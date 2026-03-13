@@ -25,7 +25,7 @@ int main(){
     for(int j=0 ; j<4; j++ ){
 
         int longitud = strlen(jugadores[j]);
-        printf("%sla longitud es %d\n\n", jugadores[j], longitud);
+        printf("%sla longitud es %d\n\n", jugadores[j], longitud-1);
 
 
     }
@@ -34,3 +34,4 @@ int main(){
 
     return 0;
 }
+
