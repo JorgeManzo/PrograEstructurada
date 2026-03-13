@@ -41,13 +41,13 @@ int main() {
         
         // Evaluación del disparo
         if (tablero[fila][columna] == 1) {
-            printf("Impacto.\n");
+            printf("Impacto!\n");
             tablero[fila][columna] = 3;
             impactos++;
             intentos--;
         } 
         else if (tablero[fila][columna] == 0) {
-            printf("Agua.\n");
+            printf("Disparo fallido.\n");
             tablero[fila][columna] = 2;
             intentos--; 
         } 
@@ -93,3 +93,4 @@ int main() {
     return 0;
 
 }
+
