@@ -41,18 +41,18 @@ int main() {
         
         // Evaluación del disparo
         if (tablero[fila][columna] == 1) {
-            printf("Impacto\n");
+            printf("Impacto.\n");
             tablero[fila][columna] = 3;
             impactos++;
             intentos--;
         } 
         else if (tablero[fila][columna] == 0) {
-            printf("Agua\n");
+            printf("Agua.\n");
             tablero[fila][columna] = 2;
             intentos--; 
         } 
         else {
-            printf("Ya habías disparado en esta coordenada, capitán.\n");
+            printf("Ya hab%cas disparado en esta coordenada.\n", 161);
         }
 
         // Mostrar el nuevo tablero
@@ -91,4 +91,5 @@ int main() {
     } while(impactos < 3 && intentos > 0);
 
     return 0;
+
 }
