@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
     int tablero1[5][5];
@@ -47,9 +48,9 @@ int main() {
 
     // Colocar barco 1x1 jugador1
     int a, b, c, d, e, f;
-    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");//Saltos de linea para que los jugadores no vean las coordenadas del otro
+    
     //Mostrar las coordenadas de referencia
-
     printf("Usa estas coordenadas como referencia.\n");
     for (int i = 1; i <=5; i++) {
         for (int j = 1; j <=5; j++) {
