@@ -16,11 +16,11 @@ int main(){
     printf("\n");
 
     int num[5];
-    for(int 1=0; i<5; i++);{
-        scanf("%d", num[i]);
+    for(int i=0; i<5; i++){
+        scanf("%d", &num[i]);
     }
-    for(int i=0; i<4; i++){
-        printf("%d -- %d", &num[i], num[i]);
+    for(int i=0; i<5; i++){
+        printf("%d -- %d \n", &num[i], num[i]);
     }
 
     printf("\n");
