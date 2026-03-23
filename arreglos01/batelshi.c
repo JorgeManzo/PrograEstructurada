@@ -8,9 +8,9 @@ int main(){
     FILE *archivo;
     archivo = fopen("tablero.txt", "w");
 
-
+    printf("Escribe tu nombre!\n");
     fgets(nom, sizeof(nom), stdin);
-    printf("%s", nom);
+    printf("\n%s", nom);
     fprintf(archivo, "%s",nom);
     for(int i=0; i<5; i++){
         for(int j=0; j<5 ; j++){
@@ -38,8 +38,6 @@ int main(){
     printf("%s", nom);
     fprintf(archivo, "%s",nom);
     fclose;
-
-    fopen("tablero.txt", "r");
 
     return 0;
 }
