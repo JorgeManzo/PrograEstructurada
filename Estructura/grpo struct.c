@@ -20,7 +20,8 @@ int main(){
 
         printf("\nDerecho\n");
         scanf("%d", &alumno[i].derecho);
-
+        getchar();
+        
         printf("La calificacion de %s es:%f\n",alumno[i].nombre,alumno[i].cal);
         printf("Las actividades de %s es:%d\n",alumno[i].nombre,alumno[i].cal);
         printf("El derecho de es %s (1=Con derecho, 0=Sin derecho) es:%f\n",alumno[i].nombre,alumno[i].act);
